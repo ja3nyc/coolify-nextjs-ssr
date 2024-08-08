@@ -22,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  checkRequiredEnv(process.env.TEST_ENV_VAR!);
+  checkRequiredEnv("TEST_ENV_VAR");
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
